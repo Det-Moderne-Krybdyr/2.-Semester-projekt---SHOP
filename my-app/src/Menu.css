@@ -1,7 +1,11 @@
-.Menu{
-    display: flex;
-    background-color:gray;
-    height: 50px;
-}
-
-
+.Menu {
+    background-color: gray;
+    height: 5%;
+    text-align: center;
+  }
+  
+  .Menu button {
+    margin: 10px;
+    background: none;
+    border: none;
+  }

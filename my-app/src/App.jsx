@@ -2,9 +2,9 @@ import React, { useState, useEffect } from "react";
 import "./App.css";
 import Header from "./Header";
 import Footer from "./Footer";
-import Card from "./Card";
 import Menu from "./Menu";
 import Body from "./Body";
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 function App() {
   const [products, setProducts] = useState([]);
@@ -22,13 +22,20 @@ function App() {
     fetchData();
   }, []);
 
+  // Extracting unique main categories from products
+  const mainCategories = [...new Set(products.map(product => product.main_category))];
+
   return (
-    <>
-      <Header />
-      <Menu />
-      <Body />
-      <Footer />
-    </>
+    <Router>
+      <div>
+        <Header />
+        <Routes>
+          <Route path="/" element={<Menu mainCategories={mainCategories} products={products} />} />
+          <Route path="/" element={<Body />} />
+        </Routes>
+        <Footer />
+      </div>
+    </Router>
   );
 }
 
