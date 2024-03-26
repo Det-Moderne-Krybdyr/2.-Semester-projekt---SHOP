@@ -1,21 +1,47 @@
 [
-    {
-      "id": 1,
-      "main_category": "Computer",
-      "sub_category": "La",
-      "name": "Desktop PC 1",
-      "description": "Description of Desktop PC 1",
-      "price": 999,
-      "image": "https://via.placeholder.com/150"
-    },
-    {
-      "id": 1,
-      "main_category": "Computer2",
-      "sub_category": "La2",
-      "name": "Desktop PC 1",
-      "description": "Description of Desktop PC 1",
-      "price": 999,
-      "image": "https://via.placeholder.com/150"
-    }
-  ]
-  
+  {
+    "id": 10,
+    "main_category": "Computers",
+    "sub_category": "Desktop PC",
+    "name": "Powerful Desktop PC",
+    "description": "Description of Powerful Desktop PC",
+    "price": 1799,
+    "image": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 11,
+    "main_category": "Mobile Devices",
+    "sub_category": "Smartphone",
+    "name": "Flagship Smartphone X",
+    "description": "Description of Flagship Smartphone X",
+    "price": 999,
+    "image": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 12,
+    "main_category": "Home Entertainment",
+    "sub_category": "Television",
+    "name": "4K Ultra HD TV",
+    "description": "Description of 4K Ultra HD TV",
+    "price": 1499,
+    "image": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 13,
+    "main_category": "Gadgets",
+    "sub_category": "Smart Home",
+    "name": "Smart Home Hub",
+    "description": "Description of Smart Home Hub",
+    "price": 299,
+    "image": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 14,
+    "main_category": "Accessories",
+    "sub_category": "Wireless Earbuds",
+    "name": "Noise-Canceling Earbuds",
+    "description": "Description of Noise-Canceling Earbuds",
+    "price": 199,
+    "image": "https://via.placeholder.com/150"
+  }
+]

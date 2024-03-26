@@ -29,9 +29,10 @@ function App() {
     <Router>
       <div>
         <Header />
+        <Menu mainCategories={mainCategories} /> {/* Render the Menu component outside Routes */}
         <Routes>
-          <Route path="/" element={<Menu mainCategories={mainCategories} products={products} />} />
           <Route path="/" element={<Body />} />
+          <Route path="/products/:category" element={<Body />} />
         </Routes>
         <Footer />
       </div>
