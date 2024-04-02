@@ -33,6 +33,7 @@ function App() {
           <Route path="/" element={<Menu mainCategories={mainCategories} products={products} />} />
           <Route path="/" element={<Body />} />
         </Routes>
+        <Body/>
         <Footer />
       </div>
     </Router>
