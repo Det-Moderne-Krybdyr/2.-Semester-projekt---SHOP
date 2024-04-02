@@ -3,9 +3,6 @@ import "./Footer.css";
 function Footer() {
   return (
       <div className="footer">
-          <div className="footer-img">
-              <img src="/Arne_Logo.png" alt="Arne Logo" />
-          </div>
           <div className="footerNav">
               {/*unordered list*/}
               <ul>
