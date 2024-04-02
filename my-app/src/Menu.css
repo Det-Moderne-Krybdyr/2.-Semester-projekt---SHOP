@@ -1,18 +1,20 @@
-.Menu{
+.Menu {
   background-color: #007bff;
+  display: flex;
+  justify-content: center;
 }
 
 .category-wrapper {
   position: relative;
   display: inline-block;
   margin-right: 20px;
-  left: 25vw;
 }
 
 .subcategories {
   position: absolute;
   top: calc(100% - 10px);
-  left: 0;
+  left: 50%;
+  transform: translateX(-50%);
   display: none;
   background-color: #ffffff;
   padding: 8px 12px;
@@ -20,7 +22,7 @@
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   border: 1px solid #eaeaea;
   z-index: 1;
-  min-width: 120px; /* Ensure minimum width */
+  min-width: 120px;
 }
 
 .category-wrapper:hover .subcategories {
