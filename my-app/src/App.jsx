@@ -4,7 +4,7 @@ import Header from "./Header";
 import Footer from "./Footer";
 import Menu from "./Menu";
 import Body from "./Body";
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
   const [products, setProducts] = useState([]);
@@ -23,17 +23,18 @@ function App() {
   }, []);
 
   // Extracting unique main categories from products
-  const mainCategories = [...new Set(products.map(product => product.main_category))];
+  const mainCategories = [
+    ...new Set(products.map((product) => product.main_category)),
+  ];
 
   return (
     <Router>
       <div>
         <Header />
+        <Menu mainCategories={mainCategories} products={products} />
         <Routes>
-          <Route path="/" element={<Menu mainCategories={mainCategories} products={products} />} />
           <Route path="/" element={<Body />} />
         </Routes>
-        <Body/>
         <Footer />
       </div>
     </Router>
