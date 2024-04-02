@@ -17,14 +17,16 @@ function App() {
         const data = await response.json();
         setProducts(data);
       } catch (error) {
-        console.error("Error fetching products data:", error);
+        console.error("Error fetching products data: ", error);
       }
     };
     fetchData();
   }, []);
 
   // Extracting unique main categories from products
-  const mainCategories = [...new Set(products.map(product => product.main_category))];
+  const mainCategories = [
+    ...new Set(products.map((product) => product.main_category)),
+  ];
 
   return (
     <Router>

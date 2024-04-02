@@ -1,3 +1,56 @@
-.Footer{
+.footer{
+    background-color: dimgray;
+    width: 100%;
+    padding-top: 20px;
+    position: absolute; /*place the footer as the last context of the website*/
+    bottom: 0; /*place the footer at the bottom of the website*/
+    left: 0;
+}
+.footer-img img{
+    max-width: 100px;
+    margin: 10px;
+    float: left;
+    position: relative;
+}
+.footerNav{
+    margin: 0px;
+    position: relative;
+    display: inline-block;
+    vertical-align: top; /* Align elements vertically */
+}
+.footerNav ul{
+    display: flex;
+    justify-content: center;
+    list-style-type:none; /*Removes bullet points*/
+}
+.footerNav ul li a{
+    color: lightgray;
+    margin: 20px;
+    text-decoration: none; /*Removes lines under the text*/
+    font-size: 1.3em;
+    opacity: 0.7;
+    transition: 0.5s;
+}
+.footerNav ul li a:hover{
+    opacity: 0.7;
+}
+.footer-facts{
+    margin: 10px;
     text-align: center;
+    color: lightgray;
+    font-size: 0.9em;
+
+}
+.horizontal-line {
+    border-top: 2px solid darkgray; /* Adjust thickness and color as needed */
+    width: 80%; /* Ensures the line spans the entire width of the footer */
+    margin: 20px; /* Adjust margin as needed */
+    position: relative; /* Position the line absolutely */
+    left: 8%; /* Align the left edge of the line to the middle of the footer */
+    bottom: 0; /* Position the line at the bottom of the footer */
+}
+.footer-copyright{
+    text-align: center;
+    color: lightgray;
+    font-size: 0.7em
 }
