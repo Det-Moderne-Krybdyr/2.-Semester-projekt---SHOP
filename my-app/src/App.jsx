@@ -4,7 +4,8 @@ import Header from "./Header";
 import Footer from "./Footer";
 import Menu from "./Menu";
 import Body from "./Body";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import ProductPage from "./ProductPage";
 
 function App() {
   const [products, setProducts] = useState([]);
@@ -34,6 +35,7 @@ function App() {
         <Menu mainCategories={mainCategories} products={products} />
         <Routes>
           <Route path="/" element={<Body />} />
+          <Route path="/products/:subcategory" element={<ProductPage />} />
         </Routes>
         <Footer />
       </div>
