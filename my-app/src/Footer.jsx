@@ -15,8 +15,8 @@ function Footer() {
           </div>
           <div className="horizontal-line"></div>
           <div className="footer-facts">
-              <p> Arnes Elektronik tager forbehold for korrektur- og trykfejl samt spris- og afgiftsændringer.</p>
-              <p> Der gøres opmærksom på ingen bestilling er benindende før Arnes Elektronik har sendt bindende faktura.</p>
+              <p> Arnes Electronics reserves the right for correction and printing errors as well as price and tax changes.</p>
+              <p> Please note that no order is binding until Arnes Electronics has issued a binding invoice.</p>
 
           </div>
           <div className="horizontal-line"></div>

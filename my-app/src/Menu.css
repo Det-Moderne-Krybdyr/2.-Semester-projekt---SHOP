@@ -1,7 +1,8 @@
 .Menu {
-  background-color: #007bff;
+  background-color: #3AA86D;
   display: flex;
   justify-content: center;
+  font-family: 'Poppins', sans-serif;
 }
 
 .category-wrapper {
