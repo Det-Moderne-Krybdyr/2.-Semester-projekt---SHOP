@@ -1,11 +1,43 @@
 .Menu {
-    background-color: gray;
-    height: 5%;
-    text-align: center;
-  }
-  
-  .Menu button {
-    margin: 10px;
-    background: none;
-    border: none;
-  }
+  background-color: #007bff;
+  display: flex;
+  justify-content: center;
+}
+
+.category-wrapper {
+  position: relative;
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.subcategories {
+  position: absolute;
+  top: calc(100% - 10px);
+  left: 50%;
+  transform: translateX(-50%);
+  display: none;
+  background-color: #ffffff;
+  padding: 8px 12px;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border: 1px solid #eaeaea;
+  z-index: 1;
+  min-width: 120px;
+}
+
+.category-wrapper:hover .subcategories {
+  display: block;
+}
+
+.subcategories p {
+  margin: 6px 0;
+  color: #333333;
+  font-size: 14px;
+  line-height: 1.5;
+  transition: color 0.3s ease;
+}
+
+.subcategories p:hover {
+  color: #007bff;
+  cursor: pointer;
+}
