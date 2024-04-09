@@ -2,63 +2,37 @@
   {
     "product_key": 1,
     "main_category": "Computers",
-    "sub_category": "Desktop PC",
-    "name": "Powerful Desktop PC",
+    "sub_category": "Ultrabook",
+    "name": "Lenovo Legion 5 i7 RTX3080 16GB",
     "producent": "Lenovo",
     "model": "Legion 5 16-ACH",
-    "description": "Description of Powerful Desktop PC",
+    "description": "This Computer will play any game at any time. \n Please buy this",
     "specs": {
-      "Processor": "Intel i5"
+      "Processor": "Intel i5",
+      "Graphics_card": "RTX3080"
     },
-    "price": 1799,
-    "stock": "25",
+    "price": 8900,
+    "stock": 5,
     "colors": "Black, White, Green",
     "image": "https://via.placeholder.com/150",
-    "document": "HTTPS://DOCUMENT.COM"
+    "document": "*link to producent guide/document*"
   },
   {
-    "id": 10,
-    "main_category": "Computers",
-    "sub_category": "Desktop PC",
-    "name": "Powerful Desktop PC",
-    "description": "Description of Powerful Desktop PC",
-    "price": 1799,
-    "image": "https://via.placeholder.com/150"
-  },
-  {
-    "id": 11,
-    "main_category": "Mobile Devices",
-    "sub_category": "Smartphone",
-    "name": "Flagship Smartphone X",
-    "description": "Description of Flagship Smartphone X",
-    "price": 999,
-    "image": "https://via.placeholder.com/150"
-  },
-  {
-    "id": 12,
-    "main_category": "Home Entertainment",
-    "sub_category": "Television",
-    "name": "4K Ultra HD TV",
-    "description": "Description of 4K Ultra HD TV",
-    "price": 1499,
-    "image": "https://via.placeholder.com/150"
-  },
-  {
-    "id": 13,
-    "main_category": "Gadgets",
-    "sub_category": "Smart Home",
-    "name": "Smart Home Hub",
-    "description": "Description of Smart Home Hub",
-    "price": 299,
-    "image": "https://via.placeholder.com/150"
-  },
-  {
-    "id": 14,
-    "main_category": "Accessories",
-    "sub_category": "Wireless Earbuds",
-    "name": "Noise-Canceling Earbuds",
-    "description": "Description of Noise-Canceling Earbuds",
-    "price": 199,
-    "image": "https://via.placeholder.com/150"
+    "product_key": 1,
+    "main_category": "",
+    "sub_category": "",
+    "name": "",
+    "producent": "",
+    "model": "",
+    "description": "",
+    "specs": {
+      "Processor": "",
+      "Graphics_card": ""
+    },
+    "price": 8900,
+    "stock": 5,
+    "colors": "",
+    "image": "",
+    "document": ""
   }
 ]
