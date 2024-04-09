@@ -1,0 +1,20 @@
+[
+  {
+    "content_key": "header_img",
+    "image": "HTTPS://TEST_IMAGE.dk",
+    "description": "",
+    "attached_document": ""
+  },
+  {
+    "content_key": "footer_info",
+    "image": "",
+    "description": "test",
+    "attached_document": ""
+  },
+  {
+    "content_key": "",
+    "image": "",
+    "description": "",
+    "attached_document": ""
+  }
+]

@@ -1,12 +1,20 @@
 [
   {
-    "id": 10,
+    "product_key": 1,
     "main_category": "Computers",
     "sub_category": "Desktop PC",
     "name": "Powerful Desktop PC",
+    "producent": "Lenovo",
+    "model": "Legion 5 16-ACH",
     "description": "Description of Powerful Desktop PC",
+    "specs": {
+      "Processor": "Intel i5"
+    },
     "price": 1799,
-    "image": "https://via.placeholder.com/150"
+    "stock": "25",
+    "colors": "Black, White, Green",
+    "image": "https://via.placeholder.com/150",
+    "document": "HTTPS://DOCUMENT.COM"
   },
   {
     "id": 10,
