@@ -1,5 +1,6 @@
 .Body{
     text-align: center;
+    display: flex;
 }
 
 .Box {
@@ -7,7 +8,6 @@
     width: 300px; /* Adjust according to your image dimensions */
     height: 400px; /* Adjust according to your image dimensions */
     padding: 10px;
-    display: inline-block;
   }
 
 .Body a {
@@ -29,4 +29,53 @@
     padding: 10px; /* Adjust padding as needed */
     border-radius: 5px; /* Rounded corners for the overlay */
   }
-  
+
+/* Body.css */
+
+/* Styles for slideshow container */
+.slideshow-container {
+    position: relative;
+    max-width: 100%;
+    margin: auto;
+}
+
+/* Style for previous and next buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: auto;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    transition: background-color 0.3s;
+}
+
+/* Positioning for the previous button */
+.prev {
+    left: 0;
+}
+
+/* Positioning for the next button */
+.next {
+    right: 0;
+}
+
+/* Styling for the dots */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.3s;
+}
+
+/* Active dot styling */
+.active, .dot:hover {
+    background-color: #717171;
+}
