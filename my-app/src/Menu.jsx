@@ -14,30 +14,30 @@ const Menu = ({ mainCategories, products }) => {
   };
 
   return (
-    <div className="Menu">
-      {mainCategories.map(category => {
-        const subcategories = Array.from(new Set( // Use Set to filter out duplicate subcategories
-          products
-            .filter(product => product.main_category === category)
-            .map(product => product.sub_category)
-        ));
+      <div className="Menu">
+        {mainCategories.map(category => {
+          const subcategories = Array.from(new Set(
+              products
+                  .filter(product => product.main_category === category)
+                  .map(product => product.sub_category)
+          ));
 
-        return (
-          <div key={category} className="category-wrapper" onMouseEnter={() => handleMouseEnter(category)} onMouseLeave={handleMouseLeave}>
-            <h3>{category}</h3>
-            {hoveredCategory === category && (
-              <div className="subcategories">
-                {subcategories.map(subcategory => (
-                  <Link key={subcategory} to={`/products/${subcategory}`}>
-                    <p>{subcategory}</p>
-                  </Link>
-                ))}
+          return (
+              <div key={category} className="category-wrapper" onMouseEnter={() => handleMouseEnter(category)} onMouseLeave={handleMouseLeave} style={{ flex: 1 }}>
+                <h3>{category}</h3>
+                {hoveredCategory === category && (
+                    <div className="subcategories">
+                      {subcategories.map(subcategory => (
+                          <Link key={subcategory} to={`/products/${subcategory}`}>
+                            <p>{subcategory}</p>
+                          </Link>
+                      ))}
+                    </div>
+                )}
               </div>
-            )}
-          </div>
-        );
-      })}
-    </div>
+          );
+        })}
+      </div>
   );
 };
 

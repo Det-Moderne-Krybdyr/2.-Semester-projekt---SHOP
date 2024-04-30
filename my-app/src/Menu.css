@@ -1,44 +1,52 @@
 .Menu {
   background-color: #3AA86D;
   display: flex;
-  justify-content: center;
-  font-family: 'Poppins', sans-serif;
+  justify-content: center; /* Horizontally center categories */
+  padding: 0 20px; /* Add padding to the sides */
+  font-family: "Gill Sans";
 }
 
 .category-wrapper {
   position: relative;
-  display: inline-block;
-  margin-right: 20px;
+  margin: 0 10px; /* Add margin to create space between categories */
+  text-align: center; /* Center category text */
+  color: #174252;
+}
+
+.category-wrapper:hover {
+  background-color: #174252; /* Change background color on hover */
+  color: #3AA86D;
 }
 
 .subcategories {
   position: absolute;
-  top: calc(100% - 10px);
-  left: 50%;
-  transform: translateX(-50%);
+  top: calc(100% + 0px); /* Position the subcategories below the category wrapper */
+  left: 50%; /* Position the subcategories starting from the center */
+  transform: translateX(-50%); /* Center the subcategories horizontally */
   display: none;
   background-color: #ffffff;
   padding: 8px 12px;
-  border-radius: 4px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   border: 1px solid #eaeaea;
-  z-index: 1;
-  min-width: 120px;
+  z-index: 1; /* Ensure the subcategories are above other content */
 }
 
 .category-wrapper:hover .subcategories {
   display: block;
+  width: max-content; /* Set width to maximum content width */
 }
 
-.subcategories p {
+.subcategories a {
   margin: 6px 0;
   color: #333333;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.5;
   transition: color 0.3s ease;
+  text-decoration: none;
+  text-align: left; /* Adjust text alignment for subcategories */
 }
 
-.subcategories p:hover {
-  color: #007bff;
+.subcategories a:hover {
+  color: #174252;
   cursor: pointer;
 }
